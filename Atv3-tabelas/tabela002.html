@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        thbody{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            /* width: 400px; */
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid gray;
+            padding: 8px;
+            text-align: center; /*linhamento horizontal */
+            vertical-align: middle;
+            width: 200px;
+            height: 30px;
+        }
+
+        thead{
+            background-color: rgb(185, 180, 180);
+        }
+
+        button{
+            background-color: red;
+        }
+        
+        #cinza {
+            background-color: rgb(185, 180, 180);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- ANATOMIA PARA TABELAS GRANDES:
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH -->
+    
+    <table>
+        <caption>Tabela 4</caption>
+        <thead>
+            <tr>
+                <th>           </th>
+                <th>Basic Price</th>
+                <th>Standart Price</th>
+                <th>Advanced Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Preço Mensal</th>
+                <td> $29 </td>
+                <td>$59</td>
+                <td>$139</td>
+            </tr>
+
+            <tr id="cinza">
+                
+                <th>Recursos</th>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+
+            <tr>
+                <th>Armazenamento</th>
+                <td>1Gb</td>
+                <td>10Gb</td>
+                <td>20Gb</td>
+            </tr>
+
+            <tr>
+                <th>Pessoas</th>
+                <td>2</td>
+                <td>20</td>
+                <td>Ilimitado</td>
+            </tr>
+
+            <tr>
+                <th>Análise de fraude</th>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+
+            <tr>
+                <th>Suporte 24/7</th>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+
+            <tr>
+                <th>Consulta</th>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+
+            <tr>
+                <th> </th>
+                <td> <button>Escola o plano</button> </td>
+                <td> <button>Escola o plano</button> </td>
+                <td> <button>Escola o plano</button> </td>
+            </tr>
+        </tbody>
+    </table>        
+</body>
+</html>
